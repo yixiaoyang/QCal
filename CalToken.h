@@ -97,15 +97,9 @@ public:
     void clear();
     int input(char ch);
     bool done();
-public:
-    //struct {
-    //    unsigned int type:3;
-    //    unsigned int is_double:1;
-    //    unsigned int inverse:4;
-    //}flags;
 
+public:
     int state;
-    //QString token;
     TokenValue value;
 
 private:

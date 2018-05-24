@@ -185,7 +185,6 @@ bool CalEngine::calRPN()
     }
 #endif
 
-#if 1
     QStack<TokenValue> valueTokens;
     bool meaningErr = false;
     while(!(rpnTokens.isEmpty() || meaningErr)){
@@ -227,7 +226,6 @@ bool CalEngine::calRPN()
         }
         return true;
     }
-#endif
     return false;
 }
 
