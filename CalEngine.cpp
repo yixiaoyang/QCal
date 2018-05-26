@@ -96,6 +96,8 @@ TokenValue CalEngine::getResult() const
 
 void CalEngine::appendToken(CalTokenParser &t)
 {
+    if(t.value.token.isEmpty())
+        return ;
     t.value.str2val();
     tokens.append(t.value);
     g_debug() << "token:" << t.value.token;
